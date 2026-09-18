@@ -1,7 +1,6 @@
 # Cisco Network Security Lab : Inter-VLAN Routing, ACL & IPsec VPN
 
 
-\
 
 ## 📌 Project Overview
 
