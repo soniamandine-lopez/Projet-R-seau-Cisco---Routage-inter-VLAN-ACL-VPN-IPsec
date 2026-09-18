@@ -1,5 +1,6 @@
 # Cisco Network Security Lab : Inter-VLAN Routing, ACL & IPsec VPN
 
+<img src="Projet-RéseauSécuriséVLAN&VPN.png" width="60%" />
 
 ## 📌 Project Overview
 
@@ -52,7 +53,7 @@ The project is then extended with a second router to create a site-to-site VPN b
 
 ### Main concepts
 
-<img src="MainConcepts.png" width="100%" />
+<img src="MainConcepts.png" width="30%" />
 
 The initial network is configured so that devices within the same VLAN can communicate, while communication between VLANs requires routing through the router.
 
@@ -92,7 +93,7 @@ The router uses separate subinterfaces for each VLAN.
 
 ### Configuration concept
 
-<img src="ConfigurationConcept.png" width="100%" />
+<img src="ConfigurationConcept.png" width="50%" />
 
 This configuration allows the router to act as the gateway for each VLAN and route traffic between the two networks.
 
@@ -164,7 +165,7 @@ The final part of the project consisted of creating a site-to-site VPN between t
 
 A second router was added to the topology.
 
-<img src="Site-to-Site_VPN.png" width="100%" />
+<img src="Site-to-Site_VPN.png" width="50%" />
 
 The routers were connected using a point-to-point `/30` network.
 
@@ -359,7 +360,7 @@ Bachelor's Degree : Cybersecurity
 
 This project helped me understand how different networking and security mechanisms work together :
 
-<img src="KeyTakeaways.png" width="100%" />
+<img src="KeyTakeaways.png" width="20%" />
 
 The project demonstrates the practical implementation of network segmentation, traffic control, routing, and secure communication using Cisco technologies.
 
