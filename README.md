@@ -1,9 +1,6 @@
 # Cisco Network Security Lab : Inter-VLAN Routing, ACL & IPsec VPN
 
 
-
----
-
 ## 📌 Project Overview
 
 This project is a Cisco networking and cybersecurity lab completed as part of my Bachelor's degree in Cybersecurity.
@@ -55,28 +52,7 @@ The project is then extended with a second router to create a site-to-site VPN b
 
 ### Main concepts
 
-```text
-                 ┌─────────────────┐
-                 │   Cisco Router  │
-                 │   Inter-VLAN    │
-                 │    Routing      │
-                 └────────┬────────┘
-                          │
-                    Trunk connection
-                          │
-                 ┌────────┴────────┐
-                 │  Cisco Switch   │
-                 └───────┬─────────┘
-                         │
-              ┌──────────┴──────────┐
-              │                     │
-           VLAN 10               VLAN 20
-              │                     │
-         ┌────┴────┐           ┌────┴────┐
-         │   PC0   │           │   PC2   │
-         │   PC1   │           │   PC3   │
-         └─────────┘           └─────────┘
-```
+<img src="MainConcepts.png" width="100%" />
 
 The initial network is configured so that devices within the same VLAN can communicate, while communication between VLANs requires routing through the router.
 
@@ -116,13 +92,7 @@ The router uses separate subinterfaces for each VLAN.
 
 ### Configuration concept
 
-```text
-Router
-│
-├── GigabitEthernet0/0.10 → VLAN 10
-│
-└── GigabitEthernet0/0.20 → VLAN 20
-```
+<img src="ConfigurationConcept.png" width="100%" />
 
 This configuration allows the router to act as the gateway for each VLAN and route traffic between the two networks.
 
@@ -194,18 +164,7 @@ The final part of the project consisted of creating a site-to-site VPN between t
 
 A second router was added to the topology.
 
-```text
-   Local Network                         Remote Network
-
-┌─────────────────┐                  ┌─────────────────┐
-│     VLANs       │                  │   Remote LAN    │
-│  192.168.x.0/24 │                  │ 192.168.3.0/24  │
-└────────┬────────┘                  └────────┬────────┘
-         │                                    │
-    ┌────▼────┐                          ┌────▼────┐
-    │ Router0 │==========================│ Router1 │
-    └─────────┘       IPsec VPN          └─────────┘
-```
+<img src="Site-to-Site_VPN.png" width="100%" />
 
 The routers were connected using a point-to-point `/30` network.
 
@@ -231,7 +190,7 @@ Connectivity between the routers and the remote network was then tested before c
 
 ---
 
-## 🔑 Part 6 — IPsec VPN Configuration
+## 🔑 Part 6 : IPsec VPN Configuration
 
 The VPN configuration uses IPsec to protect traffic exchanged between the two networks.
 
