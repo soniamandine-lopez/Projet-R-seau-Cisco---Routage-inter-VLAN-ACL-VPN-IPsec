@@ -359,21 +359,7 @@ Bachelor's Degree : Cybersecurity
 
 This project helped me understand how different networking and security mechanisms work together :
 
-```text
-VLAN
-  ↓
-Network Segmentation
-  ↓
-Inter-VLAN Routing
-  ↓
-Traffic Control with ACL
-  ↓
-Routing Between Sites
-  ↓
-IPsec VPN
-  ↓
-Encrypted Communication
-```
+<img src="KeyTakeaways.png" width="100%" />
 
 The project demonstrates the practical implementation of network segmentation, traffic control, routing, and secure communication using Cisco technologies.
 
