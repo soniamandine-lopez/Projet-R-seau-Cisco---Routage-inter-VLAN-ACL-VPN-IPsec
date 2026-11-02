@@ -99,7 +99,7 @@ This configuration allows the router to act as the gateway for each VLAN and rou
 
 The configuration was verified using :
 
-```bash
+```
 show ip interface brief
 ```
 
@@ -136,7 +136,7 @@ The objective was to restrict communication from VLAN 10 to VLAN 20 without bloc
 
 The ACL uses :
 
-```text
+```
 deny
 permit
 ```
@@ -179,7 +179,7 @@ Static routes were configured so that each router knew how to reach the remote n
 
 Router0 was configured to reach :
 
-```text
+```
 192.168.3.0/24
 ```
 
@@ -305,19 +305,14 @@ Through this project, I practiced the following technical skills :
 
 ## 📁 Repository Structure
 
-```text
+```
 .
 ├── README.md
-├── packet-tracer/
-│   └── network-security-lab.pkt
-├── documentation/
-│   └── report.pdf
-└── screenshots/
-    ├── topology.png
-    ├── vlan-configuration.png
-    ├── inter-vlan-routing.png
-    ├── acl-configuration.png
-    └── ipsec-vpn.png
+└── Images/
+    ├── ConfigurationConcept.png
+    ├── KeyTakeaxays.png
+    ├── MainConcept.png
+    └── Projet-RéseauSécuritéVLAN&VPN.png
 ```
 
 > The `.pkt` file contains the Cisco Packet Tracer network configuration used during the lab.
